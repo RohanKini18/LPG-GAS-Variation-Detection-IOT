@@ -1,5 +1,6 @@
 # LPG GAS Variation Detection
 LPG GAS Detection (MQ-4, LCD i2C 16x2)
+```A system designed to detect amount leaks in LPG gas pipelines, ensuring safety and preventing accidents.```
 # Note
 A complete project setup featuring the source code, detailed circuit diagram, and output results everything you need to build and verify the system.
 ### 🚀 [**Live Circuit Simulator**](https://wokwi.com/projects/432982147114509313) 
