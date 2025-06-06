@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "author": "Rohan Kini",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": 112.2, "left": 60.4, "attrs": {} },
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 115.8, "left": -279, "attrs": {} },
+    { "type": "wokwi-gas-sensor", "id": "gas1", "top": -45.3, "left": 122.2, "attrs": {} },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": -70.4,
+      "left": -263.2,
+      "attrs": { "pins": "i2c" }
+    }
+  ],
+  "connections": [
+    [ "uno:GND.2", "bb1:tn.1", "black", [ "v47.9", "h138.3", "v-220.8" ] ],
+    [ "bb1:bp.1", "uno:5V", "green", [ "v-0.9", "h-46.4", "v124.8", "h-172.8" ] ],
+    [ "gas1:VCC", "bb1:bp.16", "red", [ "h172.8", "v363.9", "h-144" ] ],
+    [ "gas1:GND", "bb1:tn.25", "black", [ "h67.2", "v104.8", "h86.4", "v28.8" ] ],
+    [ "gas1:AOUT", "uno:A0", "green", [ "h211.2", "v470.4", "h-556.8" ] ],
+    [ "lcd1:GND", "bb1:tn.6", "black", [ "h-38.4", "v124.8", "h451.2" ] ],
+    [ "lcd1:VCC", "bb1:bp.12", "red", [ "h-67.2", "v432.1", "h28.8" ] ],
+    [ "lcd1:SDA", "uno:A4", "green", [ "h-48", "v355.4", "h278.4" ] ],
+    [ "lcd1:SCL", "uno:A5", "green", [ "h-96", "v384.3", "h336" ] ]
+  ],
+  "dependencies": {}
+}
